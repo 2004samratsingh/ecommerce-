@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - E-Commerce Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="navbar">
+            <h1 class="logo">TechStore</h1>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#products">Products</a>
+            </nav>
+            <div class="cart-btn" id="cart-btn">
+                🛒 Cart (<span id="cart-count">0</span>)
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="hero">
+        <h2>Latest Electronics at Best Prices</h2>
+        <p>Explore our college project store catalog</p>
+    </section>
+
+    <!-- Product Display Area -->
+    <main class="container" id="products">
+        <h2>Featured Products</h2>
+        <div class="product-grid" id="product-grid">
+            <!-- Dynamic JavaScript content renders here -->
+        </div>
+    </main>
+
+    <!-- Slide-out Cart Sidebar Modal -->
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-content">
+            <span class="close-btn" id="close-cart">&times;</span>
+            <h3>Shopping Cart</h3>
+            <ul id="cart-items"></ul>
+            <div class="cart-total">
+                <strong>Total Amount: ₹<span id="total-price">0</span></strong>
+            </div>
+            <button class="checkout-btn" onclick="checkout()">Place Order</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 TechStore Project | Department of Computer Applications</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
